@@ -16,24 +16,60 @@
 
 		<style>
 
-		body {
+		html, body {
 
-		background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg);
-		background-size:cover;
-		-o-background-size:100%;
-    -webkit-background-size:100%;
+  	margin:0px;
+  	padding:0px;
+		overflow:hidden;
+
+		}
+
+		#text {
+
+		z-index:1;
+		height:105%;
+		width:105%;
+		margin: 0;
+		position: absolute;
 
 		}
 
 		h2 {
 
+		text-align:center;
 		font-weight:bold;
 		font-family:Helvetica;
-		text-align:center;
-		vertical-align: middle;
-		font-size: 128pt;
+		font-size:128pt;
 		color:#fff;
 		filter:drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5))
+
+		}
+
+		#blue {
+
+		height:50%;
+		width:100%;
+		display:block;
+		position:fixed;
+		background-color:#0057B8;
+
+		}
+
+		#yellow {
+
+		z-index:-1;
+		height:100%;
+		width:100%;
+		display:block;
+		position:fixed;
+		background-color:#FFD700;
+
+		}
+
+		#flag {
+
+		z-index:-10;
+		margin:5px;
 
 		}
 
@@ -43,7 +79,19 @@
 
 	<body>
 
-		<h2>STAND<br>WITH<br>UKRAINE</h2>
+		<div id="text">
+
+			<h2>STAND<br>WITH<br>UKRAINE</h2>
+
+		</div>
+
+		<div id="flag">
+
+			<div id="blue"></div>
+
+			<div id="yellow"></div>
+
+		</div>
 
 	</body>
 
